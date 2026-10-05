@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import CantidadInput from "./CantidadInput.jsx";
+import ImagenProducto from "./ImagenProducto.jsx";
 import { formatoCOP } from "../utils/formato.js";
 
 export default function Carrito({
@@ -28,6 +29,7 @@ export default function Carrito({
           <ul className="carrito__lista">
             {lineas.map((l) => (
               <li key={l.id} className="linea">
+                <ImagenProducto id={l.id} nombre={l.nombre} className="imagen-producto--mini" />
                 <div className="linea__info">
                   <strong>{l.nombre}</strong>
                   <span>{formatoCOP(l.precio)} c/u</span>

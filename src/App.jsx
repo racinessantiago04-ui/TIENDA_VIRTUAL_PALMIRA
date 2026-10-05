@@ -86,8 +86,14 @@ export default function App() {
   return (
     <>
       <Navbar totalUnidades={totalUnidades} onAbrirCarrito={() => setAbierto(true)} />
+      <section className="hero">
+        <div className="hero__contenido">
+          <h2>Sabores de Palmira, directo a tu casa</h2>
+          <p>Café, panela, arepas y otros productos típicos de la región, con el stock siempre al día.</p>
+        </div>
+      </section>
       <main className="catalogo">
-        <h2>Productos de la región</h2>
+        <h2>Nuestros productos</h2>
         <div className="catalogo__grilla">
           {PRODUCTOS.map((p) => (
             <ProductoCard

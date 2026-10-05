@@ -1,7 +1,7 @@
 export default function Navbar({ totalUnidades, onAbrirCarrito }) {
   return (
     <header className="navbar">
-      <h1 className="navbar__marca">Tienda Palmira</h1>
+      <h1 className="navbar__marca"><span className="navbar__punto" aria-hidden="true" />Tienda Palmira</h1>
       <button
         className="navbar__carrito"
         onClick={onAbrirCarrito}

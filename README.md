@@ -27,6 +27,7 @@ Abre la dirección que muestra la terminal (normalmente http://localhost:5173).
 - Mínimo 1: con cantidad 1, − o escribir 0 muestra un toast con botón para confirmar la eliminación. También hay botón **Quitar**.
 - Subtotales, total de unidades y total de la compra en formato COP, actualizados al instante.
 - Toasts propios (sin `alert()`): se cierran solos y manualmente.
+- Interfaz profesional con hero, tarjetas con ilustración de cada producto (`ImagenProducto.jsx`) y miniaturas en el carrito.
 - Extras: el carrito se guarda en `localStorage`, diseño responsive, foco visible y toasts anunciables por lectores de pantalla.
 
 ## Estructura
@@ -39,6 +40,7 @@ src/
 └── components/
     ├── Navbar.jsx
     ├── ProductoCard.jsx
+    ├── ImagenProducto.jsx  ilustraciones SVG de los productos
     ├── CantidadInput.jsx   validaciones del campo numérico (reutilizable)
     ├── Carrito.jsx
     └── Toasts.jsx
